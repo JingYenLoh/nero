@@ -33,7 +33,6 @@
   '(;; Visual
     all-the-icons
     doom-themes
-    nord-theme
     ;; Useful
     evil-quickscope
     ox-ioslide)
@@ -78,9 +77,6 @@ Each entry is either:
     (setq doom-neotree-enable-variable-pitch t
           doom-neotree-file-icons 'simple
           doom-neotree-line-spacing 4)))
-
-(defun nero/init-nord-theme ()
-  (use-package nord-theme))
 
 (defun nero/init-evil-quickscope ()
   (use-package evil-quickscope))
