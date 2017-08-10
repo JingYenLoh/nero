@@ -33,8 +33,9 @@
   '(;; Visual
     all-the-icons
     doom-themes
-    nord
+    nord-theme
     ;; Useful
+    evil-quickscope
     ox-ioslide)
   "The list of Lisp packages required by the nero layer.
 
@@ -78,8 +79,11 @@ Each entry is either:
           doom-neotree-file-icons 'simple
           doom-neotree-line-spacing 4)))
 
-(defun nero/init-nord ()
-  (use-package nord))
+(defun nero/init-nord-theme ()
+  (use-package nord-theme))
+
+(defun nero/init-evil-quickscope ()
+  (use-package evil-quickscope))
 
 (defun nero/init-ox-ioslide ()
   (use-package ox-ioslide))
