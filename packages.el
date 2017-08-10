@@ -30,7 +30,12 @@
 ;;; Code:
 
 (defconst nero-packages
-  '()
+  '(;; Visual
+    all-the-icons
+    doom-themes
+    nord
+    ;; Useful
+    ox-ioslide)
   "The list of Lisp packages required by the nero layer.
 
 Each entry is either:
@@ -57,5 +62,26 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
+
+;; Initialize packages
+(defun nero/init-all-the-icons ()
+  (use-package all-the-icons))
+
+(defun nero/init-doom-themes ()
+  (use-package doom-themes
+    :config
+    (setq doom-themes-enable-bold t
+          doom-themes-enable-italic t)
+
+    (doom-themes-neotree-config)
+    (setq doom-neotree-enable-variable-pitch t
+          doom-neotree-file-icons 'simple
+          doom-neotree-line-spacing 4)))
+
+(defun nero/init-nord ()
+  (use-package nord))
+
+(defun nero/init-ox-ioslide ()
+  (use-package ox-ioslide))
 
 ;;; packages.el ends here
