@@ -70,7 +70,6 @@ This function should only modify configuration layer settings."
      git
      version-control
      ;; Themes
-     themes-megapack
      theming
      ;; Tools
      fasd
