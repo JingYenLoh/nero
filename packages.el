@@ -35,7 +35,9 @@
     doom-themes
     ;; Useful
     evil-quickscope
-    ox-ioslide)
+    ox-ioslide
+    ;; Programming
+    vue-mode)
   "The list of Lisp packages required by the nero layer.
 
 Each entry is either:
@@ -83,5 +85,8 @@ Each entry is either:
 
 (defun nero/init-ox-ioslide ()
   (use-package ox-ioslide))
+
+(defun nero/init-vue-mode ()
+  (use-package vue-mode))
 
 ;;; packages.el ends here
