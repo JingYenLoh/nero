@@ -396,6 +396,7 @@ before packages are loaded."
                 js-indent-level 2)
   ;; Org
   (setq org-agenda-files (list "~/org/school.org"
+                               "~/org/side-projects.org"
                                "~/org/machine-learning.org"))
   (setq org-reveal-root "~/Documents/reveal.js")
   )
