@@ -401,6 +401,12 @@ before packages are loaded."
                                "~/org/side-projects.org"
                                "~/org/machine-learning.org"))
   (setq org-reveal-root "~/Documents/reveal.js")
+  ;; active Babel languages
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((scheme . t)
+     (emacs-lisp . t)
+     ))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
