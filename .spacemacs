@@ -74,7 +74,7 @@ This function should only modify configuration layer settings."
      ;; Tools
      fasd
      pandoc
-     pdf-tools
+     ;; pdf-tools
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
